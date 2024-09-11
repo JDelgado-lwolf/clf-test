@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="xBM">
+    <meta name="author" content="Lone Wolf">
+
+    <title>xBM</title>
+    <link rel="icon" href="https://assets.lwolf.com/img/favicon-light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="https://assets.lwolf.com/img/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="img/favicon.ico"/>
+
+    <!--	&lt;!&ndash; MapBox Scripts &ndash;&gt;-->
+    <!--	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>-->
+    <!--	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.js'></script>-->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="https://assets.lwolf.com/lwt-helix/v2.1.0/all.min.css">
+    <link href="/css/common.css" rel="stylesheet">
+    <link href="/css/agent-production.css" rel="stylesheet">
+    <link href="/build/bundle.css" rel="stylesheet">
+
+    <!-- import font family "Roboto" for Login Page -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="xbm">
+<noscript>
+    You need to enable JavaScript to run this app.
+</noscript>
+<div id="root"></div>
+<script src="/build/bundle.js"></script>
+<script type="module" src="/build-info.js"></script>
+<script>
+    (function(apiKey) {
+        (function(p, e, n, d, o) {
+            var v, w, x, y, z;
+            o = p[d] = p[d] || {};
+            o._q = o._q || [];
+            v = ['initialize', 'identify', 'updateOptions', 'pageLoad', 'track'];
+            for (w = 0, x = v.length; w < x; ++w) (function(m) {
+                o[m] = o[m] || function() {
+                    o._q[m === v[0] ? 'unshift' : 'push']([m].concat([].slice.call(arguments, 0)));
+                };
+            })(v[w]);
+            y = e.createElement(n);
+            y.async = !0;
+            y.src = 'https://cdn.pendo.io/agent/static/' + apiKey + '/pendo.js';
+            z = e.getElementsByTagName(n)[0];
+            z.parentNode.insertBefore(y, z);
+        })(window, document, 'script', 'pendo');
+    })('124bcc97-f92b-416e-5510-62165d360cb6');
+</script>
+</body>
+</html>

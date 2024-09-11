@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "public/",
+    "sourceMap": true,
+    "importHelpers": true
+  },
+  "compileOnSave": true,
+  "exclude": [ "src" ],
+  "include": [ "node_modules/@smui/**/*.ts", "file.ts" ]
+}

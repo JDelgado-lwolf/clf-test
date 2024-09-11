@@ -1,0 +1,21 @@
+# IDE
+.idea
+*.DS_Store
+*.iml
+
+#  npm generated files
+/node_modules/
+
+#  rollup generated files
+/public/sw.js
+/public/sw.js.map
+/public/bundle.css
+/public/bundle.css.map
+/public/bundle.js
+/public/bundle.js.map
+/public/build/
+
+# jest generated files
+coverage/
+
+/.env

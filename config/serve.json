@@ -1,0 +1,13 @@
+{
+    "directoryListing": false,
+    "headers": [{
+        "source": "**",
+        "headers": [{
+            "key": "Strict-Transport-Security",
+            "value": "max-age-31536000"
+        }, {
+            "key": "Cache-Control",
+            "value": "no-store, no-cache"
+        }]
+    }]
+}

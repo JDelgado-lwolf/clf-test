@@ -1,0 +1,733 @@
+/* Chart Styling */
+
+#chartTableList .table-active > td{
+  background-color: aliceblue;
+}
+
+.view-profile-icon i, .view-profile-icon div {
+  color: #147db7;
+}
+
+/* Table Styling */
+
+.td-num {
+  text-align: right;
+}
+
+#button-group-volume-units {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+.volume-chart-y-label {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#button-group-volume-units {
+  z-index: 1;
+}
+
+.volume-chart-tooltip {
+  font-size: 12px;
+  font-weight: 400;
+}
+.volume-chart-tooltip .header {
+  margin: 0 auto;
+  padding: .5em 1em;
+  background-color: #eee;
+  border-bottom: solid 1px #ddd;
+  text-align: center;
+}
+.volume-chart-tooltip .body {
+  padding: .5em 1em;
+  margin: 0 auto;
+  text-align: right;
+}
+.volume-chart-tooltip .bullet {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.volume-chart-tooltip .body .total {
+  margin-top: 3px;
+  border-top: solid 1px #bbb;
+}
+.volume-chart-tooltip .body .total-percent {
+  margin-top: 3px;
+  border-bottom: solid 1px #bbb;
+}
+/* Agent coverage chart */
+
+.agent-coverage-chart-y-label {
+  font-size: 24px;
+  font-weight: normal;
+}
+.agent-coverage-cities-select{
+  width: auto;
+  max-width: 180px;
+}
+@media only screen and (max-width: 576px) {
+  .agent-coverage-chart-controls{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .agent-coverage-controls-item{
+    flex-grow: 1;
+  }
+  .agent-coverage-controls-item:last-child{
+    margin-top: 8px;
+  }
+}
+
+#agentsCoverageTableLink{
+  background-color: transparent;
+}
+
+#agent-coverage-chart-container {
+  min-height: 80px;
+}
+
+#agent-profile .export-share-button {
+  display: block;
+  align-self: center;
+}
+
+.data-table-header {
+  background-color: #fff;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  z-index: initial;
+}
+
+/* property information cards */
+#pricing-history-table {
+  margin-top: 1em;
+}
+#pricing-history-table.table-striped tbody tr:nth-of-type(even) {
+  background-color: #fff;
+}
+#property-info {
+  margin-top: 1em;
+  display: flex;
+  max-width: 1210px;
+}
+#property-info > .card-container:first-child {
+  margin-right: 1em;
+}
+#property-info-market-share div div > div:not(.helix-body--strong):not(.property-value):nth-child(2n) {
+  background-color: #F9FAFB;
+}
+#property-info-market-share {
+  display: flex;
+  font-size: 16px;
+  margin-top: 1em;
+}
+.property-description {
+  margin-left: 14px;
+}
+.property-value {
+  font-size: 16px;
+  font-weight: 700;
+}
+.property-detail-description {
+  font-weight: 400;
+  line-height: 20px;
+}
+.property-detail-value {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.tableOverflow {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/*Agent coverage listings*/
+
+.agent-coverage-listings-header{
+  max-height: 55px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.agent-coverage-listing-breadcrumb{
+  font-size: 14px;
+}
+
+.agent-coverage-listing-select {
+  min-width: 250px;
+}
+
+.xbm .xbm-tabs-adjustment-mod {
+  margin-top: 1.5em;
+  display: block;
+}
+@media (min-width: 800px) {
+  .xbm .xbm-tabs-adjustment-mod {
+    margin-top: -2em;
+    display: flex;
+
+  }
+}
+
+.volume-units-selector {
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+}
+#agent-volume-chart-container {
+  min-height: 80px;
+}
+
+div.tableOverflow div.row.react-bootstrap-table-pagination {
+  display: unset;
+}
+
+div.tableOverflow ul.pagination.react-bootstrap-table-page-btns-ul {
+  float: unset;
+  padding-top: 5px;
+}
+
+div.tableOverflow ul.dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px
+}
+
+div#contactInformationTable td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* hard (!important) overrides */
+.flex-grow-0 {
+  flex-grow: 0 !important;
+}
+.no-ml-pl {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+.no-mr-pr {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.width-100 {
+  max-width: 100%;
+}
+
+.small.ag-cell-value {
+  font-weight: inherit;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+.dot-dot-dot, .ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+
+.metrics-selector .popover {
+  width: 260px;
+}
+.metrics-selector .popover-header {
+  width: 258px;
+}
+.metrics-selector.growth-analysis .popover .col-md-1,
+.metrics-selector.growth-analysis .popover .col-md-2,
+.metrics-selector.growth-analysis .popover .col-md-3 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.metrics-selector.listing-proficiency .popover {
+  width: 190px;
+}
+
+.metrics-selector.listing-proficiency .popover-inner {
+  width: inherit;
+}
+
+.metrics-selector.listing-proficiency .popover-header {
+  width: 188px;
+}
+
+/* Col grid px breakpoints (xs, sm, md, lg, xl) are at min-width: 576, 768, 992, 1200 */
+
+@media only screen and (min-width: 576px) {
+  .metrics-selector .popover {
+    width: 420px;
+  }
+  .metrics-selector .popover-header {
+    width: 418px;
+  }
+  .metrics-selector.growth-analysis .popover {
+    width: 260px;
+  }
+  .metrics-selector.growth-analysis .popover-header {
+    width: 258px;
+  }
+  .metrics-selector.listing-proficiency .popover {
+    width: 530px;
+  }
+  .metrics-selector.listing-proficiency .popover-header {
+    width: 528px;
+  }
+}
+
+@media only screen and (max-width: 1012px) {
+  .agent-production-header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .metrics-selector .popover,
+  .metrics-selector.growth-analysis .popover {
+    width: 710px;
+  }
+  .metrics-selector .popover-header,
+  .metrics-selector.growth-analysis .popover-header {
+    width: 708px;
+  }
+  .metrics-selector.growth-analysis .popover .col-md-1 {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .metrics-selector.growth-analysis .popover .col-md-2,
+  .metrics-selector.growth-analysis .popover .col-md-3 {
+    flex: 0 0 36%;
+    max-width: 36%;
+  }
+
+  .metrics-selector.contact-information .popover-header {
+    width: 708px;
+  }
+
+  .metrics-selector.listing-proficiency .popover {
+    width: 750px;
+  }
+  .metrics-selector.listing-proficiency .popover-header {
+    width: 748px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .metrics-selector.listing-proficiency .popover {
+    width: 830px;
+  }
+  .metrics-selector.listing-proficiency .popover-header {
+    width: 828px;
+  }
+}
+
+/* scroll the schema table if needed but keep pagination visible */
+.schema-table-layout-auto
+{
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 1rem;
+}
+
+.schema-table-layout-auto > table.table
+{
+  table-layout: auto;
+  margin-bottom: 0;
+}
+
+.has-no-superheaders .table th {
+  border-top: none;
+}
+
+/* Office history tab */
+
+.no-Office-data{
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 45px;
+  text-align: center;
+  text-transform: capitalize;
+}
+ .first-office{
+  color: transparent;
+ }
+
+/* widths for specific table columns by data */
+tbody td.col-email {
+  overflow-wrap: anywhere;
+  white-space: inherit !important;
+  text-overflow: inherit !important;
+}
+
+thead .col-wrap {
+  width: 150px;
+}
+
+.col-email,
+.col-agent-name,
+.col-office-name
+{
+  min-width: 330px;
+}
+
+.col-address,
+.col-inventory-type,
+.col-mls-area
+{
+  min-width: 230px;
+}
+
+.col-zip
+{
+  min-width: 92px;
+}
+
+.col-dom,
+.col-status,
+.col-counts,
+.col-count-price-changes,
+.col-area,
+.col-count-sm
+{
+  min-width: 76px;
+}
+
+.col-pct,
+.col-month
+{
+  min-width: 100px;
+}
+
+.col-agent-id,
+.col-office-id,
+.col-volume,
+.col-price,
+.col-city,
+.col-county,
+.col-phone,
+.col-count-days,
+.col-units,
+.col-sq-ft,
+.col-mls-num,
+.col-date,
+.col-year,
+.col-type
+{
+  min-width: 140px;
+}
+
+.saved-search-sort {
+  font-size: 11px;
+}
+
+.listing-period-select {
+  min-width: 175px;
+}
+
+#listing-breadcrumb {
+  color: #4282de;
+  font-weight: 400;
+}
+
+#listing-breadcrumb:hover {
+  cursor: pointer;
+}
+
+/* Profile page styling */
+
+ul.mls-list {
+  max-height: 278px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+
+ul.mls-list li {
+  padding: 1rem 0;
+  color: #111827;
+  font-weight: 600;
+}
+
+.input-group>.form-control:not(:first-child) {
+  font-size: 14px;
+  border-left: none;
+}
+
+.input-group-text {
+  background: #fff;
+}
+
+.msg-wrapper {
+  padding: .5rem;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: pre-wrap;
+}
+
+.no-mls-msg {
+  padding: .25rem 0;
+  text-align: center;
+}
+
+/* match the helix tooltip where possible */
+.metrics-selector-tooltip {
+  font-size: 14px !important;
+  border-radius: 8px !important;
+  padding: 3px 6px !important;
+  max-width: 250px !important;
+  z-index: 1080 !important;
+}
+.schema-table-tooltip {
+  font-size: 0.75rem !important;
+  z-index: 1080 !important;
+}
+.saved-search-tooltip {
+  z-index: 1080 !important;
+}
+
+.super-header {
+  font-weight: 600;
+  color: #6B7280;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border-top: 0 !important;
+}
+
+.sticky-top {
+  z-index: 999;
+}
+
+.initial-search {
+  font-size: 24px;
+}
+.no-search-results
+{
+  font-size: 22px;
+}
+.no-search-results-suggestion {
+  font-size: 18px
+}
+.no-search-results-dropdown
+{
+  font-size: 20px;
+}
+.no-search-results-suggestion-dropdown {
+  font-size: 14px
+}
+
+.marketListsGroupHeader {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6B7280;
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-top: 1px solid #F3F4F6;
+  padding-top: 10px;
+}
+
+.emptySelectGroupHeader {
+  border-top: 1px solid #F3F4F6;
+  padding-top: 10px;
+}
+
+/* AG GRID */
+.header-number>.ag-cell-label-container>.ag-header-cell-label {
+  display: flex;
+  align-content: right;
+  justify-content: flex-end;
+}
+
+.header-number {
+  display: flex;
+  align-content: right;
+  justify-content: flex-end;
+}
+
+.highlighted-column {
+  background-color: rgb(59, 130, 246, 0.1);
+}
+
+.selected .ag-row-selected {
+  background-color: rgb(59, 130, 246, 0.1) !important;
+}
+
+.ag-theme-alpine, .ag-row-selected {
+  background-color: transparent !important;
+}
+
+.ag-cell-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ag-theme-alpine .ag-ltr .ag-row-drag, .ag-theme-alpine .ag-ltr .ag-selection-checkbox,
+.ag-theme-alpine .ag-ltr .ag-group-expanded, .ag-theme-alpine .ag-ltr .ag-group-contracted {
+  margin-left: 12px;
+}
+
+.ag-root-wrapper.ag-layout-normal {
+  min-height: 80vh;
+}
+
+#overview,
+#contactInformation,
+#growthAnalysisLtm,
+#growthAnalysisYtd,
+#listingProficiency {
+  .ag-root-wrapper.ag-layout-normal {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-height: 55vh;
+    min-height: 55vh;
+  }
+}
+
+@media (min-height: 761px) {
+  #overview,
+  #contactInformation,
+  #growthAnalysisLtm,
+  #growthAnalysisYtd,
+  #listingProficiency {
+    .ag-root-wrapper.ag-layout-normal {
+      min-height: 60vh;
+    }
+  }
+}
+
+@media (min-height: 850px) {
+  #overview,
+  #contactInformation,
+  #growthAnalysisLtm,
+  #growthAnalysisYtd,
+  #listingProficiency {
+    .ag-root-wrapper.ag-layout-normal {
+      min-height: 65vh;
+    }
+  }
+}
+
+.ag-center-cols-clipper {
+  min-height: 40px !important;
+}
+
+/*AgGrid Key Information MarketDynamics*/
+.ag-cell-general-key-info {
+  font-weight: 600;
+  color: var(--helix-gray-600)
+}
+
+.ag-cell-decrease-value, .ag-cell-decrease-value > span > svg > path {
+  color: var(--helix-red-600);
+  fill: var(--helix-red-600);
+}
+
+.ag-cell-increase-value, .ag-cell-increase-value > span > svg > path {
+  color: var(--helix-green-600);
+  fill: var(--helix-green-600);
+} 
+
+.status-ellipse {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; 
+}
+
+/* Toggle/Filters/Metrics/Export buttons */
+.labels-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+#showAndHideOptionsBtn, #downloadBtn {
+  height: 28px;
+}
+
+.metrics-arrow-icon {
+  margin-top: 1px;
+  margin-left: 5px;
+}
+
+/* AG-Grid Available & Added Offices */
+#availableOffices .ag-header-cell-text,
+#addedOffices .ag-header-cell-text {
+  font-size: 11px !important;
+  font-weight: 600;
+}
+
+#availableOffices .ag-cell,
+#addedOffices .ag-cell {
+  font-size: 11px !important;
+  font-weight: 400;
+}
+
+#availableOffices .ag-row,
+#addedOffices .ag-row {
+    border: 0;
+    cursor: pointer;
+}
+
+#availableOffices .ag-header,
+#addedOffices .ag-header {
+    border: 0;
+}
+
+#availableOffices .ag-header-cell-resize::after,
+#addedOffices .ag-header-cell-resize::after {
+    background-color: transparent;
+}
+
+#availableOffices .ag-root-wrapper,
+#addedOffices .ag-root-wrapper {
+    box-shadow: none;
+}
+
+.inactive-row {
+  color: red !important;
+}
+
+#availableOffices .ag-root-wrapper,
+#addedOffices .ag-root-wrapper,
+#availableAgents .ag-root-wrapper,
+#addedAgents .ag-root-wrapper {
+  max-height: 200px !important;
+  min-height: 360px !important;
+}
+
+.officeListId .transfer-items-list,
+.agentListId .transfer-items-list {
+  overflow-y: hidden;
+}
+
+/* Office Breakdown */
+
+.office-breakdown-wrapper {
+  padding-bottom: 70px;
+  min-height: 70vh;
+}
+
+.office-breakdown-wrapper .ag-layout-auto-height .ag-body-viewport {
+  height: 70vh;
+  overflow-y: scroll;
+}

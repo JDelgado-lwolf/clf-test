@@ -1,0 +1,1 @@
+export const MAX_COUNT_AGENTS_RETURNED = 5000;
